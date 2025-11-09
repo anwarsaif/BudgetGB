@@ -1,0 +1,2 @@
+PM> Scaffold-DbContext "Server=BASSAM\MSSQLSERVER2;Database=Logix2023_08_28;Trusted_Connection = yes;" Microsoft.EntityFrameworkCore.SqlServer -o TestModels -Tables OPM_Contract_VW -DataAnnotations
+

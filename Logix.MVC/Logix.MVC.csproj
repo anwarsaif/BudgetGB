@@ -1,0 +1,496 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="wwwroot\AllFiles\Forms\**" />
+	  <Compile Remove="wwwroot\TempFiles\**" />
+	  <Content Remove="wwwroot\AllFiles\Forms\**" />
+	  <Content Remove="wwwroot\TempFiles\**" />
+	  <EmbeddedResource Remove="wwwroot\AllFiles\Forms\**" />
+	  <EmbeddedResource Remove="wwwroot\TempFiles\**" />
+	  <None Remove="wwwroot\AllFiles\Forms\**" />
+	  <None Remove="wwwroot\TempFiles\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Remove="Areas\OPM\Views\OpmPayroll\ReportPayroll2.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="C:\Users\user\.nuget\packages\libwkhtmltox-32\0.12.6.1\contentFiles\any\any\libwkhtmltox.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Areas\OPM\Views\OpmSales_Order\PrintSales_Orderhtml" />
+		<Content Include="wwwroot\assets\.vscode\settings.json" />
+		<Content Include="wwwroot\v2\.idea\modules.xml" />
+		<Content Include="wwwroot\v2\.idea\workspace.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Areas\GB\Views\Costsitems\Add.cshtml" />
+		<None Include="Areas\GB\Views\Costsitems\Edit.cshtml" />
+		<None Include="Areas\GB\Views\Costsitems\Index.cshtml" />
+		<None Include="Areas\GB\Views\Costsitems\PrintAdd.cshtml" />
+		<None Include="Areas\GB\Views\Costsitems\PrintEdit.cshtml" />
+		<None Include="Areas\GB\Views\Costsitems\PrintIndex.cshtml" />
+		<None Include="Areas\GB\Views\Costsitems\_AddDetaileCostsitems.cshtml" />
+		<None Include="Areas\GB\Views\Costsitems\_EditDetaileCostsitems.cshtml" />
+		<None Include="Areas\GB\Views\GBDashboard\Index.cshtml" />
+		<None Include="Areas\GB\Views\InitialCredits\Add.cshtml" />
+		<None Include="Areas\GB\Views\InitialCredits\Edit.cshtml" />
+		<None Include="Areas\GB\Views\InitialCredits\Index.cshtml" />
+		<None Include="Areas\GB\Views\InitialCredits\_AddDetaileCredits.cshtml" />
+		<None Include="Areas\GB\Views\Mainitems\add.cshtml" />
+		<None Include="Areas\GB\Views\Mainitems\Edit.cshtml" />
+		<None Include="Areas\GB\Views\Mainitems\Index.cshtml" />
+		<None Include="Areas\GB\Views\Subitems\AccountsTree.cshtml" />
+		<None Include="Areas\GB\Views\Subitems\Add.cshtml" />
+		<None Include="Areas\GB\Views\Subitems\Edit.cshtml" />
+		<None Include="Areas\GB\Views\Subitems\ImportExcel.cshtml" />
+		<None Include="Areas\GB\Views\Subitems\Index.cshtml" />
+		<None Include="Areas\GB\Views\Subitems\_AccountView.cshtml" />
+		<None Include="Areas\GB\Views\Subitems\_ShowData.cshtml" />
+		<None Include="Areas\GB\Views\_ViewImports.cshtml" />
+		<None Include="Areas\GB\Views\_ViewStart.cshtml" />
+		<None Include="Areas\OPM\Views\OpmPayroll\ReportPayroll2.cshtml" />
+		<None Include="Views\SysCustomerGroupAccount\Add.cshtml" />
+		<None Include="Views\SysCustomerGroup\Add.cshtml" />
+		<None Include="Views\SysCustomerGroup\Edit.cshtml" />
+		<None Include="Views\SysCustomerGroup\Index.cshtml" />
+		<None Include="Views\SysLicense\Add.cshtml" />
+		<None Include="Views\SysLicense\Edit.cshtml" />
+		<None Include="Views\SysLicense\Index.cshtml" />
+		<None Include="wwwroot\lib\jquery-cookie\.gitignore" />
+		<None Include="wwwroot\lib\jquery-cookie\.jshintignore" />
+		<None Include="wwwroot\lib\jquery-cookie\.jshintrc" />
+		<None Include="wwwroot\lib\jquery-cookie\.tm_properties" />
+		<None Include="wwwroot\lib\jquery-cookie\.travis.yml" />
+		<None Include="wwwroot\lib\jquery-cookie\CHANGELOG.md" />
+		<None Include="wwwroot\lib\jquery-cookie\CONTRIBUTING.md" />
+		<None Include="wwwroot\lib\jquery-cookie\Gruntfile.js" />
+		<None Include="wwwroot\lib\jquery-cookie\README.md" />
+		<None Include="wwwroot\lib\jquery-cookie\src\.jshintrc" />
+		<None Include="wwwroot\lib\jquery-cookie\src\jquery.cookie.js" />
+		<None Include="wwwroot\lib\jquery-cookie\test\.jshintrc" />
+		<None Include="wwwroot\lib\jquery-cookie\test\tests.js" />
+		<None Include="wwwroot\lib\vakata-jstree\.github\FUNDING.yml" />
+		<None Include="wwwroot\lib\vakata-jstree\.github\workflows\npm-publish.yml" />
+		<None Include="wwwroot\v2\.idea\.gitignore" />
+		<None Include="wwwroot\v2\.idea\.name" />
+		<None Include="wwwroot\v2\.idea\V2.iml" />
+		<None Include="wwwroot\assets\css\ace-ie.min.css" />
+		<None Include="wwwroot\assets\css\ace-responsive.min.css" />
+		<None Include="wwwroot\assets\css\ace-skins.min.css" />
+		<None Include="wwwroot\assets\css\ace.min.css" />
+		<None Include="wwwroot\assets\css\all.min.css" />
+		<None Include="wwwroot\assets\css\bootstrap-editable.css" />
+		<None Include="wwwroot\assets\css\bootstrap-responsive.min.css" />
+		<None Include="wwwroot\assets\css\bootstrap-responsive.rtl.css" />
+		<None Include="wwwroot\assets\css\bootstrap-responsive.rtl.min.css" />
+		<None Include="wwwroot\assets\css\bootstrap-timepicker.css" />
+		<None Include="wwwroot\assets\css\bootstrap.min.css" />
+		<None Include="wwwroot\assets\css\bootstrap.min.css.map" />
+		<None Include="wwwroot\assets\css\bootstrap.rtl.css" />
+		<None Include="wwwroot\assets\css\bootstrap.rtl.min.css" />
+		<None Include="wwwroot\assets\css\chosen-sprite%402x.png" />
+		<None Include="wwwroot\assets\css\chosen-sprite.png" />
+		<None Include="wwwroot\assets\css\chosen.css" />
+		<None Include="wwwroot\assets\css\colorbox.css" />
+		<None Include="wwwroot\assets\css\colorpicker.css" />
+		<None Include="wwwroot\assets\css\datepicker.css" />
+		<None Include="wwwroot\assets\css\daterangepicker.css" />
+		<None Include="wwwroot\assets\css\font-awesome-ie7.min.css" />
+		<None Include="wwwroot\assets\css\font-awesome.min.css" />
+		<None Include="wwwroot\assets\css\fonts.css" />
+		<None Include="wwwroot\assets\css\fullcalendar.css" />
+		<None Include="wwwroot\assets\css\fullcalendar.min.css" />
+		<None Include="wwwroot\assets\css\general.css" />
+		<None Include="wwwroot\assets\css\images\border.png" />
+		<None Include="wwwroot\assets\css\images\controls.png" />
+		<None Include="wwwroot\assets\css\images\loading.gif" />
+		<None Include="wwwroot\assets\css\images\loading_background.png" />
+		<None Include="wwwroot\assets\css\images\overlay.png" />
+		<None Include="wwwroot\assets\css\img\alpha.png" />
+		<None Include="wwwroot\assets\css\img\hue.png" />
+		<None Include="wwwroot\assets\css\img\saturation.png" />
+		<None Include="wwwroot\assets\css\jquery-ui-1.10.3.custom.min.css" />
+		<None Include="wwwroot\assets\css\jquery.gritter.css" />
+		<None Include="wwwroot\assets\css\owl.carousel.min.css" />
+		<None Include="wwwroot\assets\css\owl.theme.default.css" />
+		<None Include="wwwroot\assets\css\prettify.css" />
+		<None Include="wwwroot\assets\css\select2-spinner.gif" />
+		<None Include="wwwroot\assets\css\select2.css" />
+		<None Include="wwwroot\assets\css\select2.png" />
+		<None Include="wwwroot\assets\css\select2x2.png" />
+		<None Include="wwwroot\assets\font\Almarai-Regular.ttf" />
+		<None Include="wwwroot\assets\font\ArefRuqaa-Regular.ttf" />
+		<None Include="wwwroot\assets\font\Cairo-Regular.ttf" />
+		<None Include="wwwroot\assets\font\DroidArabicKufiBold.eot" />
+		<None Include="wwwroot\assets\font\DroidArabicKufiBold.otf" />
+		<None Include="wwwroot\assets\font\DroidArabicKufiBold.svg" />
+		<None Include="wwwroot\assets\font\DroidArabicKufiBold.ttf" />
+		<None Include="wwwroot\assets\font\DroidArabicKufiBold.woff" />
+		<None Include="wwwroot\assets\font\DroidArabicKufiRegular.ttf" />
+		<None Include="wwwroot\assets\font\fontawesome-webfont.svg" />
+		<None Include="wwwroot\assets\font\fontawesome-webfont.ttf" />
+		<None Include="wwwroot\assets\font\fontawesome-webfont.woff" />
+		<None Include="wwwroot\assets\font\fontawesome-webfont_2d2816fe.eot" />
+		<None Include="wwwroot\assets\font\fontawesome-webfont_aea8981c.eot" />
+		<None Include="wwwroot\assets\font\fontawesome-webfont_aea8981c.ttf" />
+		<None Include="wwwroot\assets\font\fontawesome-webfont_aea8981c.woff" />
+		<None Include="wwwroot\assets\font\Harmattan-Regular.ttf" />
+		<None Include="wwwroot\assets\font\IDAutomationHC39M_Free_Version.ttf" />
+		<None Include="wwwroot\assets\font\Katibeh-Regular.ttf" />
+		<None Include="wwwroot\assets\font\Kufam-VariableFont_wght.ttf" />
+		<None Include="wwwroot\assets\font\Mirza-Regular.ttf" />
+		<None Include="wwwroot\assets\font\Omar-Bold-1.ttf" />
+		<None Include="wwwroot\assets\font\Qahiri-Regular.ttf" />
+		<None Include="wwwroot\assets\font\Rakkas-Regular.ttf" />
+		<None Include="wwwroot\assets\font\ReemKufi-VariableFont_wght.ttf" />
+		<None Include="wwwroot\assets\font\Tajawal-Regular.ttf" />
+		<None Include="wwwroot\assets\font\Vibes-Regular.ttf" />
+		<None Include="wwwroot\assets\imgs\Component.png" />
+		<None Include="wwwroot\assets\imgs\eid.png" />
+		<None Include="wwwroot\assets\imgs\logo.png" />
+		<None Include="wwwroot\assets\imgs\user.jpg" />
+		<None Include="wwwroot\assets\js\all.min.js" />
+		<None Include="wwwroot\assets\js\bootstrap.bundle.min.js" />
+		<None Include="wwwroot\assets\js\bootstrap.bundle.min.js.map" />
+		<None Include="wwwroot\assets\js\chart.min.js" />
+		<None Include="wwwroot\assets\js\charts.js" />
+		<None Include="wwwroot\assets\js\dashboard.js" />
+		<None Include="wwwroot\assets\js\jquery-3.6.0.min.js" />
+		<None Include="wwwroot\assets\js\login.js" />
+		<None Include="wwwroot\assets\js\owl.carousel.min.js" />
+		<None Include="wwwroot\assets\js\stepper.js" />
+		<None Include="wwwroot\css\jquery.calendars.picker.css" />
+		<None Include="wwwroot\css\select2.min.css" />
+		<None Include="wwwroot\favicon.ico" />
+		<None Include="wwwroot\js2\bootstrap.js" />
+		<None Include="wwwroot\js2\bootstrap.min.js" />
+		<None Include="wwwroot\js2\changeStyle.js" />
+		<None Include="wwwroot\js2\Chart.bundle.js" />
+		<None Include="wwwroot\js2\Colorchartjs.js" />
+		<None Include="wwwroot\js2\Custom.js" />
+		<None Include="wwwroot\js2\facebox.js" />
+		<None Include="wwwroot\js2\JQScript.js" />
+		<None Include="wwwroot\js2\JQScriptold.js" />
+		<None Include="wwwroot\js2\jquery-1.3.2.min.js" />
+		<None Include="wwwroot\js2\jquery-1.9.1.min.js" />
+		<None Include="wwwroot\js2\jquery-ui.js" />
+		<None Include="wwwroot\js2\jquery.alerts.js" />
+		<None Include="wwwroot\js2\jquery.calendars.islamic-ar.js" />
+		<None Include="wwwroot\js2\jquery.calendars.islamic.js" />
+		<None Include="wwwroot\js2\jquery.calendars.js" />
+		<None Include="wwwroot\js2\jquery.calendars.persian.js" />
+		<None Include="wwwroot\js2\jquery.calendars.picker.js" />
+		<None Include="wwwroot\js2\jquery.calendars.plus.js" />
+		<None Include="wwwroot\js2\jquery.calendars.ummalqura.js" />
+		<None Include="wwwroot\js2\jquery.datepick.js" />
+		<None Include="wwwroot\js2\jquery.js" />
+		<None Include="wwwroot\js2\jquery.plugin.js" />
+		<None Include="wwwroot\js2\jquery.ui.datepicker-ar.js" />
+		<None Include="wwwroot\js2\jquery.wysiwyg.js" />
+		<None Include="wwwroot\js2\JScript.js" />
+		<None Include="wwwroot\js2\modal.js" />
+		<None Include="wwwroot\js2\numberToWords.min.js" />
+		<None Include="wwwroot\js2\pup.js" />
+		<None Include="wwwroot\js2\purify.js" />
+		<None Include="wwwroot\js2\select2.min.js" />
+		<None Include="wwwroot\js2\simpla.jquery.configuration.js" />
+		<None Include="wwwroot\js2\sliding.form.js" />
+		<None Include="wwwroot\js2\Tabscript.js" />
+		<None Include="wwwroot\js2\vue.js" />
+		<None Include="wwwroot\js2\vue.min.js" />
+		<None Include="wwwroot\js\select2-custom.js" />
+		<None Include="wwwroot\js\site.js" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+		<None Include="wwwroot\lib\bootstrap\LICENSE" />
+		<None Include="wwwroot\lib\jquery-validation-unobtrusive2\jquery.validate.unobtrusive.js" />
+		<None Include="wwwroot\lib\jquery-validation-unobtrusive2\jquery.validate.unobtrusive.min.js" />
+		<None Include="wwwroot\lib\jquery-validation-unobtrusive2\LICENSE.txt" />
+		<None Include="wwwroot\lib\jquery-validation2\dist\additional-methods.js" />
+		<None Include="wwwroot\lib\jquery-validation2\dist\additional-methods.min.js" />
+		<None Include="wwwroot\lib\jquery-validation2\dist\jquery.validate.js" />
+		<None Include="wwwroot\lib\jquery-validation2\dist\jquery.validate.min.js" />
+		<None Include="wwwroot\lib\jquery-validation2\LICENSE.md" />
+		<None Include="wwwroot\lib\jquery2\dist\jquery.js" />
+		<None Include="wwwroot\lib\jquery2\dist\jquery.min.js" />
+		<None Include="wwwroot\lib\jquery2\dist\jquery.min.map" />
+		<None Include="wwwroot\lib\jquery2\LICENSE.txt" />
+		<None Include="wwwroot\lib\select2\dist\css\select2.css" />
+		<None Include="wwwroot\lib\select2\dist\css\select2.min.css" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\af.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ar.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\az.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\bg.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\bn.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\bs.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ca.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\cs.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\da.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\de.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\dsb.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\el.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\en.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\es.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\et.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\eu.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\fa.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\fi.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\fr.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\gl.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\he.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\hi.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\hr.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\hsb.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\hu.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\hy.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\id.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\is.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\it.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ja.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ka.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\km.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ko.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\lt.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\lv.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\mk.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ms.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\nb.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ne.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\nl.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\pl.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ps.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\pt-BR.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\pt.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ro.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\ru.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\sk.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\sl.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\sq.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\sr-Cyrl.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\sr.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\sv.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\th.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\tk.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\tr.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\uk.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\vi.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\zh-CN.js" />
+		<None Include="wwwroot\lib\select2\dist\js\i18n\zh-TW.js" />
+		<None Include="wwwroot\lib\select2\dist\js\select2.full.js" />
+		<None Include="wwwroot\lib\select2\dist\js\select2.full.min.js" />
+		<None Include="wwwroot\lib\select2\dist\js\select2.js" />
+		<None Include="wwwroot\lib\select2\dist\js\select2.min.js" />
+		<None Include="wwwroot\v2\client_portal\css\style.css" />
+		<None Include="wwwroot\v2\client_portal\imgs\login.png" />
+		<None Include="wwwroot\v2\client_portal\imgs\logo.png" />
+		<None Include="wwwroot\v2\client_portal\imgs\techno.jpg" />
+		<None Include="wwwroot\v2\client_portal\js\index.js" />
+		<None Include="wwwroot\v2\css\all.min.css" />
+		<None Include="wwwroot\v2\css\bootstrap.min.css" />
+		<None Include="wwwroot\v2\css\bootstrap.min.css.map" />
+		<None Include="wwwroot\v2\css\fonts.css" />
+		<None Include="wwwroot\v2\css\general.css" />
+		<None Include="wwwroot\v2\css\jquery-ui.min.css" />
+		<None Include="wwwroot\v2\css\owl.carousel.min.css" />
+		<None Include="wwwroot\v2\css\owl.theme.default.css" />
+		<None Include="wwwroot\v2\css\popups.css" />
+		<None Include="wwwroot\v2\css\styleprint.css" />
+		<None Include="wwwroot\v2\css\test.css" />
+		<None Include="wwwroot\v2\css\test2.css" />
+		<None Include="wwwroot\v2\fonts\LondrinaOutline-Regular.ttf" />
+		<None Include="wwwroot\v2\fonts\Tajawal-Black.ttf" />
+		<None Include="wwwroot\v2\fonts\Tajawal-Bold.ttf" />
+		<None Include="wwwroot\v2\fonts\Tajawal-ExtraBold.ttf" />
+		<None Include="wwwroot\v2\fonts\Tajawal-ExtraLight.ttf" />
+		<None Include="wwwroot\v2\fonts\Tajawal-Light.ttf" />
+		<None Include="wwwroot\v2\fonts\Tajawal-Medium.ttf" />
+		<None Include="wwwroot\v2\fonts\Tajawal-Regular.ttf" />
+		<None Include="wwwroot\v2\imgs\apps.png" />
+		<None Include="wwwroot\v2\imgs\calender - Copy.png" />
+		<None Include="wwwroot\v2\imgs\calender.png" />
+		<None Include="wwwroot\v2\imgs\Component.png" />
+		<None Include="wwwroot\v2\imgs\eid.png" />
+		<None Include="wwwroot\v2\imgs\forget.png" />
+		<None Include="wwwroot\v2\imgs\image_2022-10-13_174320332-removebg-preview.png" />
+		<None Include="wwwroot\v2\imgs\logo.png" />
+		<None Include="wwwroot\v2\imgs\noun-employees-1510422.svg" />
+		<None Include="wwwroot\v2\js\all.min.js" />
+		<None Include="wwwroot\v2\js\bootstrap.bundle.js" />
+		<None Include="wwwroot\v2\js\chart.min.js" />
+		<None Include="wwwroot\v2\js\charts.js" />
+		<None Include="wwwroot\v2\js\dashboard.js" />
+		<None Include="wwwroot\v2\js\jquery-3.6.0.min.js" />
+		<None Include="wwwroot\v2\js\jquery-migrate-3.0.0.min.js" />
+		<None Include="wwwroot\v2\js\jquery-ui-1.13.2.js" />
+		<None Include="wwwroot\v2\js\jquery-ui.min.js" />
+		<None Include="wwwroot\v2\js\login.js" />
+		<None Include="wwwroot\v2\js\owl.carousel.min.js" />
+		<None Include="wwwroot\v2\js\stepper.js" />
+		<None Include="wwwroot\v2\webfonts\fa-brands-400.ttf" />
+		<None Include="wwwroot\v2\webfonts\fa-brands-400.woff2" />
+		<None Include="wwwroot\v2\webfonts\fa-duotone-900.ttf" />
+		<None Include="wwwroot\v2\webfonts\fa-duotone-900.woff2" />
+		<None Include="wwwroot\v2\webfonts\fa-light-300.ttf" />
+		<None Include="wwwroot\v2\webfonts\fa-light-300.woff2" />
+		<None Include="wwwroot\v2\webfonts\fa-regular-400.ttf" />
+		<None Include="wwwroot\v2\webfonts\fa-regular-400.woff2" />
+		<None Include="wwwroot\v2\webfonts\fa-solid-900.ttf" />
+		<None Include="wwwroot\v2\webfonts\fa-solid-900.woff2" />
+		<None Include="wwwroot\v2\webfonts\fa-thin-100.ttf" />
+		<None Include="wwwroot\v2\webfonts\fa-thin-100.woff2" />
+		<None Include="wwwroot\v2\webfonts\fa-v4compatibility.ttf" />
+		<None Include="wwwroot\v2\webfonts\fa-v4compatibility.woff2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="7.0.1" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Dapper" Version="2.1.15" />
+		<PackageReference Include="DinkToPdf" Version="1.0.8" />
+		<PackageReference Include="EPPlus" Version="6.2.3" />
+		<PackageReference Include="HTMLToQPDF" Version="1.1.0" />
+		<PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.3" />
+		<PackageReference Include="LibWkHtmlToX-32" Version="0.12.6.1" />
+		<PackageReference Include="MailKit" Version="4.3.0" />
+		<!--<PackageReference Include="LogixWhatsappV3" Version="3.0.3" />-->
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
+		<PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.7" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+		<PackageReference Include="QuestPDF" Version="2023.12.6" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.0" />
+		<PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+		<PackageReference Include="System.Security.Cryptography.Cng" Version="5.0.0" />
+		<PackageReference Include="TextToQRImage" Version="1.0.5" />
+		<PackageReference Include="YamlDotNet" Version="13.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Areas\GB\ViewModels\" />
+	  <Folder Include="Areas\OPM\Data\" />
+	  <Folder Include="Areas\OPM\Models\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Logix.Application\Logix.Application.csproj" />
+	  <ProjectReference Include="..\Logix.Domain\Logix.Domain.csproj" />
+	  <ProjectReference Include="..\Logix.Infrastructure\Logix.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\SharedResources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>SharedResources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="Areas\GB\Views\Reinforcements\Index.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="Areas\GB\Views\Reinforcements\_AddDetaileReinforcements.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="Areas\GB\Views\Reinforcements\_EditDetaileReinforcements.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="Areas\GB\Views\Subitems\_EditAccountExpenses2.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="Areas\GB\Views\Transfers\PrintAdd.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="Areas\GB\Views\Transfers\PrintEdit.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\SharedResources.resx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>SharedResources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="Areas\GB\Views\Reinforcements\Add.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="Areas\GB\Views\Reinforcements\Add.cshtml" />
+	  <_ContentIncludedByDefault Remove="Areas\GB\Views\Reinforcements\Edit.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="Areas\GB\Views\Reinforcements\Edit.cshtml" />
+	</ItemGroup>
+
+	<ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="https://json.schemastore.org/babelrc.json" /></VisualStudio></ProjectExtensions>
+
+</Project>
